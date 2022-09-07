@@ -1,0 +1,251 @@
+body{
+    background-color: #3D087B;
+}
+.main {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 2vw;
+    justify-content: center;
+}
+/* left */
+.head {
+    height: 10vh;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head img {
+    width: 30%;
+    height: 80%;
+}
+#msg {
+    width: 12vw;
+    height: 10vh;
+    padding: 0 1vw;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.head i{
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 6.75vh;
+    left: 47.3vw;
+}
+.selector {
+    height: 40vh;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0 0 30px 0;
+    display: grid;
+    grid-template-columns: 5vw auto;
+    grid-gap: 10px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 0 0;
+}
+.logo i hr
+{
+    position: relative;
+    top:-18px;
+    height: 3vw;
+    background-color: gainsboro;
+}
+.logo i{
+    height: 4vh;
+    padding: 8px;
+}
+.timings {
+    display: flex;
+    justify-content: space-between;
+    color: #3D087B;
+}
+.timings p {
+    font-size: 1.2rem;
+}
+.time {
+    width: 18vw;
+    height: 5vh;
+    color: #3D087BDE;
+    border-radius: 5px;
+    margin: 12px 20px 0 0;
+}
+.title {
+    color: white;
+    font-family: 'Baumans', cursive;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+}
+.title::before{
+    content: "";
+    background-color: #EDEDED;
+    border-radius: 15px;
+    position: absolute;
+    height: 10vh;
+    width: 40%;
+    opacity: 0.3;
+}
+.title span {
+    margin: 0;
+    position: absolute;
+    left: 12vw;
+    display:inline-block;
+    font-size: 33px;
+}
+.box{
+    display: grid;
+    grid-template-columns: 19vw 19vw;
+    justify-content: space-between;
+    position: relative;
+    top: 7vh;
+}
+.abox{
+    height: 5vh;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #CB52F8, #FC5EFF, #F1A7C5,pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.box2 {
+    display: none;
+}
+.abox:hover{
+    background-image: linear-gradient(to left, #CB52F8, #FC5EFF, #F1A7C5,pink);
+}
+.abox:hover .box1{
+    display: none;
+}
+.abox:hover .box2{
+    display: block;
+}
+.tbox{
+    color: #F25CFE;
+    line-height: 25px;
+}
+.tbox::before{
+    content: "";
+    background-color: #EDEDED;
+    height: 16vh;
+    border-radius: 15px;
+    position: absolute;
+    left: 20vw;
+    width: 19vw;
+    opacity: 0.3;
+}
+.tbox span {
+    position: relative;
+    left: 8px;
+}
+.note1 {
+    width: 16vw;
+    color: #858585;
+    background-color: #FFFFFF;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2vh;
+    right: 4vw;
+}
+.note1 i{
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 6.25vh;
+    left: 4vw;
+}
+/* right */
+.display {
+    display: flex;
+    justify-content: center;
+}
+.t1{
+    width: 33vw;
+    height: 15vh;
+    border-radius: 5px;
+    color: #3D087B;
+    background-color: white;
+    position: absolute;
+    top: 5vh;
+    left: 51vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t1 h3 {
+    margin-right: 20px ;
+}
+.t1_1{
+    width: 5vw;
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    background-image: url("timeline.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.t1_2{
+    font-size: 1.6rem;
+}
+.t1_3 {
+    width: 5vw;
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 18px 0;
+    color: #FFFFFF;
+    background-image: url("AM_svg.svg");
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.b1 {
+    width: 28%;
+    height: 15vh;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 6.5vh;
+    left: 53.4vw;
+    opacity: 0.8;
+    z-index: -1;
+}
+.b2 {
+    width: 25%;
+    height: 15vh;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 8vh;
+    left: 55vw;
+    opacity: 0.3;
+    z-index: -2;
+}
+.note2 {
+    width: 33vw;
+    height: 10vh;
+    color: #8E53F0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: 'Baumans', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25vh;
+}
+.bgimg img {
+    width: 33vw;
+    position: relative;
+    top: 30vh;
+}
